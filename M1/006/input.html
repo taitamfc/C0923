@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="ten" value=""> 
+    <input type="button" onclick="xu_ly()" value="Hien thi">
+    <p id="ket_qua"></p>
+
+    <script>
+        /*
+            Nhap vao ten
+            Nhan nut hien thi thi in ra ten ở thẻ p#ket_qua
+        */
+        // khối xử lý
+        // B1: bắt sự kiện onclick
+        function xu_ly(){
+            // B2: lấy giá trị trong ô input#ten
+            var ten = document.getElementById('ten').value
+            // alert( ten )
+            //B3: In dữ liệu vào p#ket_qua
+            document.getElementById('ket_qua').innerHTML = ten
+        }
+    </script>
+</body>
+</html>
