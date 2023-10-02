@@ -1,18 +1,18 @@
 <script>
     // Khai báo bước lặp
-    cnt = 2;
+    cnt = 3;
     // KHai bao biến đếm SNT tìm được
     count = 0;
     
     // Thực hiện vòng lặp cho đến khi tìm được 20 SNT
     while( count <= 20 ){
         // Giả sử là SNT
-        var isSTN = false;
+        var isSTN = true;
         // Chạy vòng lặp từ 2 đến dưới số hiện tại
         for( var i = 2; i < cnt; i++ ){
             // nếu cnt chia hết cho các giá trị từ 2 đến dưới nó
             if( cnt % i == 0 ){
-                isSTN = true;
+                isSTN = false;
             }
         }
 
