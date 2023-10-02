@@ -1,0 +1,29 @@
+<script>
+    // Khai báo bước lặp
+    cnt = 2;
+    // KHai bao biến đếm SNT tìm được
+    count = 0;
+    
+    // Thực hiện vòng lặp cho đến khi tìm được 20 SNT
+    while( count <= 20 ){
+        // Giả sử là SNT
+        var isSTN = false;
+        // Chạy vòng lặp từ 2 đến dưới số hiện tại
+        for( var i = 2; i < cnt; i++ ){
+            // nếu cnt chia hết cho các giá trị từ 2 đến dưới nó
+            if( cnt % i == 0 ){
+                isSTN = true;
+            }
+        }
+
+        // Nếu là SNT thì in ra và tăng count lên 1
+        if( isSTN ){
+            console.log( cnt );
+            count++;
+        }
+
+        // Thực hiện sau lần lặp
+        cnt ++;
+
+    }
+</script>
